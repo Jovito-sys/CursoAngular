@@ -1,0 +1,14 @@
+<h1>Calculadora</h1>
+
+<div class="container card py-5">
+    <form action="" method="post">
+        Numero 1: <input type="text"[(ngModel)]="numero1"name="numero1">  <br> <br>
+        Numero 2: <input type="text" [(ngModel)]="numero2"name="numero2"> <br>  <br>
+
+        <button type="submit" class="btn btn-primary mx-1" (click)="somar()">Somar</button>
+        <button type="submit" class="btn btn-primary mx-2" (click)="subtrair()">Subtrair</button>
+        <button type="submit" class="btn btn-primary mx-2" (click)="multiplicar()">Multiplicar</button>
+        <button type="submit" class="btn btn-primary mx-2" (click)="dividir()">Dividir</button>
+    </form>
+</div>
+<p>Resultado {{resultado}}</p>
